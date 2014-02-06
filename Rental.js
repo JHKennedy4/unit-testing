@@ -5,10 +5,10 @@ function Rental (movie, daysRented) {
 
 Rental.prototype.getDaysRented = function () {
 	return this._daysRented;
-}
+};
 
 Rental.prototype.getMovie = function () {
 	return this._movie;
-}
+};
 
 module.exports = Rental;

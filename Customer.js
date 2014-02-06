@@ -7,11 +7,11 @@ function Customer (name) {
 
 Customer.prototype.addRental = function (arg)  {
 	this._rentals.push(arg);
-}
+};
 
 Customer.prototype.getName = function () {
 	return this._name;
-}
+};
 
 Customer.prototype.statement = function () {
 	var totalAmount = 0,
@@ -62,6 +62,6 @@ Customer.prototype.statement = function () {
 			  ' frequent renter points\n';
 
 	return result;
-}
+};
 
 module.exports = Customer;
