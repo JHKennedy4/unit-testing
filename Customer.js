@@ -6,7 +6,7 @@ function Customer (name) {
 }
 
 Customer.prototype.addRental = function (arg)  {
-	this._rentals.append(arg);
+	this._rentals.push(arg);
 }
 
 Customer.prototype.getName = function () {
