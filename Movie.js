@@ -21,5 +21,3 @@ Movie.prototype.getTitle = function () {
 Movie.CHILDRENS = 2;
 Movie.REGULAR = 0;
 Movie.NEW_RELEASE = 1;
-
-module.exports = Movie;

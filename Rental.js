@@ -10,5 +10,3 @@ Rental.prototype.getDaysRented = function () {
 Rental.prototype.getMovie = function () {
 	return this._movie;
 }
-
-module.exports = Rental;

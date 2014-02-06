@@ -1,5 +1,3 @@
-var Movie = require('./Movie');
-
 function Customer (name) {
 	this._name = name;
 	this._rentals = []; //new Vector();
@@ -63,5 +61,3 @@ Customer.prototype.statement = function () {
 
 	return result;
 }
-
-module.exports = Customer;
