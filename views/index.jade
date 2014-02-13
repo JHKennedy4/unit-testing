@@ -1,0 +1,38 @@
+extends layout
+
+block content
+  h1 Browserify
+  p For fun and profit
+  
+
+  h2 Video Store Demo:
+
+  h4 New Customer
+  form#customer
+    input(type="text", name="customerName")
+    br
+    input(type="submit", value="Submit")
+
+  h4 Rent a Movie
+  form#rental
+    input(type="text", name="title")
+    br
+    input(type='radio',name='category',value=0)
+    span Regular
+    br
+    input(type='radio',name='category',value=1)
+    span New Release
+    br
+    input(type='radio',name='category',value=2)
+    span Childrens
+    br
+    input(type="text", name="days")
+    br
+    input(type="submit", value="Submit")
+
+
+  h4 Statement
+  button#print Print Statement
+  .statement
+
+  script(src="scripts/bundle.js")

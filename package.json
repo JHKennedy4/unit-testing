@@ -6,8 +6,17 @@
   "directories": {
     "test": "specs"
   },
+  "browserify-shim": {
+    "jquery": "global:jQuery"
+  },
+  "browserify": {
+    "transform": [ "browserify-shim" ]
+  },
+  
   "scripts": {
-    "test": ""
+    "test": "",
+    "bsfy": "browserify client/scripts/index.js -o public/scripts/bundle.js",
+    "watch": "watchify client/scripts/index.js -o public/scripts/bundle.js"
   },
   "author": "John Kennedy",
   "devDependencies": {
@@ -20,7 +29,13 @@
     "tiny-lr": "0.0.5",
     "gulp-autoprefixer": "0.0.4",
     "gulp-jasmine": "~0.1.3",
-    "gulp-clean": "~0.2.4"
+    "gulp-clean": "~0.2.4",
+    "browserify": "~3.28.2",
+    "browserify-shim": "~3.2.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "express": "3.4.8",
+    "jade": "*",
+    "console-browserify": "~1.0.3"
+  }
 }

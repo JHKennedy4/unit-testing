@@ -11,7 +11,7 @@ var gulp = require("gulp"),
     rename = require("gulp-rename"),
     server = lr();
     */
-
+/*
 gulp.task("clean", function () {
     gulp.src(["../../static/bundle.js", "../../static/style.css"],
         {read: false})
@@ -27,11 +27,12 @@ gulp.task("clean-css", function () {
     gulp.src("../../static/style.css", {read: false})
     .pipe(clean({force: true}));
 });
+*/
 
-gulp.task("scripts-dev", ['clean-scripts'], function () {
-    gulp.src("./javascript/*.js")
+gulp.task("scripts-dev"/*, ['clean-scripts']*/, function () {
+    gulp.src("./index.js")
     .pipe(browserify({debug: true}))
-    .pipe(gulp.dest('../../static/bundle.js'));
+    .pipe(gulp.dest('./bundle.js'));
 });
 
 gulp.task("scripts-dist", ['clean-scripts'], function () {
